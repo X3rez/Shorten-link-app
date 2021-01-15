@@ -1,3 +1,4 @@
+<%- include('./partials/header') %> 
 
 <form action="/" method="POST">
     <input type="text" name="fullUrl" >
@@ -9,6 +10,8 @@
         <th>Short</th>
     </thead>
     <tbody>
-        <tr> <a href="http://localhost:4000/<%= Shorten %>"><%= Shorten %></a> </tr>
+        <tr> <a href="http://<%= Shorten %>"><%= Shorten %></a> </tr>
     </tbody>
 </table>
+
+<%- include('./partials/footer') %> 
