@@ -1,17 +1,13 @@
 <%- include('./partials/header') %> 
 
-<form action="/" method="POST">
-    <input type="text" name="fullUrl" >
-    <button>Shorten</button>
+<form action="/" method="POST" class="shorten-container">
+    <input class="input" type="text" name="fullUrl" placeholder="Type your link" >
+    <button class="button">Shorten</button>
 </form>
 
-<table>
-    <thead>
-        <th>Short</th>
-    </thead>
-    <tbody>
-        <tr> <a href="http://<%= Shorten %>"><%= Shorten %></a> </tr>
-    </tbody>
-</table>
+<section class="shorten-link-container">
+    <h2 class="shorten-link-title">Short</h2>
+    <a class="shorten-link" href="http://<%= Shorten %>"><%= Shorten %></a>
+</section>
 
 <%- include('./partials/footer') %> 
